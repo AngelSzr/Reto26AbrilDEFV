@@ -1,12 +1,7 @@
 //Ejercicio 1
-function reverse(s) {
-    return s.split("").reverse().join("");
-}
-var sss = reverse("adam")
-console.log(sss)
-
-function palindrome(palabra) {
-    posiblePalindromo = reverse(palabra)
+function palindrome() {
+    palabra = prompt("Ingresa la palabra").replace(" ", "");
+    posiblePalindromo = palabra.split("").reverse().join("");
     return palabra === posiblePalindromo
 }
 
