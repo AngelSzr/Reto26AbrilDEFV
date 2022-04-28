@@ -1,8 +1,9 @@
 //Ejercicio 1
 function palindrome() {
-    palabra = prompt("Ingresa la palabra").replace(" ", "");
+    palabra = prompt("Ingresa la palabra").replace(/ /g, "");
     posiblePalindromo = palabra.split("").reverse().join("");
-    return palabra === posiblePalindromo
+    console.log(palabra + "---" + posiblePalindromo)
+    return palabra == posiblePalindromo
 }
 
 //Ejercicio 2
